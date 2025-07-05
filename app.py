@@ -67,6 +67,10 @@ def delete_book(id):
                         "book": book}), 200
     else:
         return jsonify({"error": "Book not found."}), 404
+    
+@app.route('/')
+def homepage():
+    return jsonify({"message": "Welcome to the Library Management System!"})
 
 if __name__ == '__main__':
     app.run(debug=True)
