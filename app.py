@@ -70,7 +70,7 @@ def delete_book(id):
     
 @app.route('/')
 def homepage():
-    return jsonify({"message": "Welcome to the Library Management System!"})
+    return "Welcome to the Library Management System!"
 
 if __name__ == '__main__':
     app.run(debug=True)
